@@ -1,0 +1,14 @@
+# .github/workflows/hello.yml
+name: Hello World CI
+
+on:
+  push:
+    branches: [ main ]  # main 브랜치에 push 될 때만 실행
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, world from GitHub Actions!"
